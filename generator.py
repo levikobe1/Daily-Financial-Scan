@@ -1,6 +1,3 @@
-להחליף את כל `generator.py` בקוד הבא. התיקון המרכזי: בריחת סוגריים בתוך `f"""..."""` כדי ש־Python לא ינסה לפרש קוד JavaScript. 
-
-```python
 import os
 import json
 import time
@@ -328,4 +325,3 @@ if __name__ == "__main__":
             generate_html(news_data)
         else:
             print("שגיאה בקבלת נתונים מה-API. הקובץ לא עודכן.")
-```

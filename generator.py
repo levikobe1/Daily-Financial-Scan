@@ -51,6 +51,10 @@ def fetch_real_news_from_gemini():
             if response.status_code == 200:
                 result = response.json()
                 text_response = result["candidates"][0]["content"]["parts"][0]["text"]
+
+                print("=== GEMINI RESPONSE ===")
+                print(text_response)
+                
                 return json.loads(text_response)
 
             print(f"שגיאת שרת ({response.status_code}). מנסה שוב...")
